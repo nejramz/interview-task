@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Interview</title>
+
+    <style>
+        header {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #4e52ff;
+        }
+
+        body {
+            background-color: #bdbfff;
+
+        }
+
+        a {
+            padding-top: 10px;
+
+        }
+
+        h1 {
+            color: white;
+        }
+
+        #review {
+
+            color: #4e52ff;
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 20px;
+
+
+        }
+
+        #download {
+            color:white;
+            padding-top: 10px;
+        }
+
+        p {
+            font-size: 60px;
+        }
+
+        h2 {
+            text-align: justify-all;
+        }
+
+
+
+    </style>
+
+
+    <!-- Getting the input value from previous page -->
+    <script>
+    window.addEventListener('load', () => {
+        const name = sessionStorage.getItem('SLIDER');
+        document.getElementById('result-name').innerHTML = name;
+    })
+    </script>
+
+
+</head>
+
+ <body>
+
+   <header>
+       <!-- Back anchor bootstrap -->
+       <a href="untitled2/index.html"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="100" height="40" fill="currentColor" class="bi bi-arrow-return-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5z"/>
+        </svg>
+       </a>
+
+    <h1>Hulu</h1>
+    <!-- Download icon bootstrap -->
+    <div id="download"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+    </svg>
+    </div>
+
+   </header>
+
+   <!-- Result of input range -->
+
+<div id="review">
+    <h2>Nejra gave a review of <span id="result-name" /> </h2>
+
+</div>
+
+
+</body>
+</html>
